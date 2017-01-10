@@ -8,19 +8,9 @@ Test page
       document.getElementById('message').innerHTML = message;
     };
   }());
-  (function() {
-  var originalPostMessage = window.postMessage;
-
-  var patchedPostMessage = function(message, targetOrigin, transfer) { 
-    originalPostMessage(message, targetOrigin, transfer);
-  };
-
-  patchedPostMessage.toString = function() { 
-    return String(Object.hasOwnProperty).replace('hasOwnProperty', 'postMessage'); 
-  };
-
-  window.postMessage = patchedPostMessage;
-})();
+  setTimeout(function(){
+        window.postMessage('hello', '*')
+    }, 100);
   
 </script>
 <div id='message'></div>
