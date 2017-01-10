@@ -2,7 +2,7 @@
   <body>
 Test page
 <script>
-  window.postMessage('test');
+  window.postMessage('test','*');
   (function () {
     window.onMessage = function (message) {
       document.getElementById('message').innerHTML = message;
