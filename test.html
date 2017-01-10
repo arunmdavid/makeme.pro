@@ -3,9 +3,11 @@
 Test page
 <script>
   window.postMessage('test');
-  window.onMessage = function (data) {
-    document.getElementById('message').innerHTML = data;
-  }
+  (function () {
+    window.onMessage = function (message) {
+      document.getElementById('message').innerHTML = message;
+    };
+  }());
 </script>
 <div id='message'></div>
   </body>
