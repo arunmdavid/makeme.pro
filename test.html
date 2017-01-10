@@ -1,7 +1,12 @@
+<html>
+  <body>
 Test page
 <script>
   window.postMessage('test');
   window.onMessage = function (data) {
-    alert(data);
+    document.getElementById('message').innerHTML = data;
   }
 </script>
+<div id='message'></div>
+  </body>
+</html>
