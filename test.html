@@ -21,8 +21,9 @@ Test page
 
   window.postMessage = patchedPostMessage;
 })();
-  window.postMessage('test','*');
+  
 </script>
 <div id='message'></div>
+    <div onclick="window.postMessage('test','*');">post</div>
   </body>
 </html>
