@@ -1,9 +1,9 @@
 {
   "data": {
     "faqs": [
-      {"q": "What is A?", "a": "A for Apple."},
-      {"q": "What is B?", "a": "B for Ball."},
-      {"q": "What is C?", "a": "C for Cat."}
+      {"q": "What is A?", "a": "A is for Apple."},
+      {"q": "What is B?", "a": "B is for Ball."},
+      {"q": "What is C?", "a": "C is for Cat."}
     ]
   }
 }
