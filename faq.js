@@ -25,7 +25,7 @@ if (faqs.length) {
 }*/
 var currentScript = document.currentScript;
 var faqPath = 'default.json';
-if (window.location == 'https://www.doparttime.com/jobs/abc') {
+if (window.location == 'https://www.doparttime.com/jobs/Chennai') {
    faqPath = 'chennai.json';
 }
 fetch('//www.makeme.pro/' + faqPath).then(function(response) {response.json().then(function(resp) {
