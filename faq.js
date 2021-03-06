@@ -24,7 +24,11 @@ if (faqs.length) {
   document.querySelector('head').appendChild(faqSchemaElement);
 }*/
 var currentScript = document.currentScript;
-fetch('//www.makeme.pro/faq.json').then(function(response) {response.json().then(function(resp) {
+var faqPath = 'default.json';
+if (window.location == 'https://www.doparttime.com/jobs/abc') {
+   faqPath = 'chennai.json';
+}
+fetch('//www.makeme.pro/' + faqPath).then(function(response) {response.json().then(function(resp) {
   var faqs = resp.data.faqs;
   var faqElement = document.createElement('div');
   var faqHtml = '<h4>Frequently Asked Questions (FAQ)</h4><hr/>';
